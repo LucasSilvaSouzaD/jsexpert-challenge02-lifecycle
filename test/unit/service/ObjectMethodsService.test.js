@@ -42,7 +42,6 @@ describe('ObjectMethodsService Suite Tests', () => {
     const result3 = object.toString();
 
     const expected = `[name="${rawObject.name}",age=${rawObject.age}]`;
-
     expect(result).not.to.be.deep.equal('[object Object]');
     expect(result).to.be.deep.equal(expected);
     expect(result2).to.be.deep.equal(expected);
